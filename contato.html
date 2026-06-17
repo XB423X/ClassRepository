@@ -8,18 +8,8 @@
 </head>
 <body>
     <header>
-       <h1> titulo</h1> 
+       <h1> Formulário</h1> 
     </header>
-    */ Nome completo: input type='text', required.
-- E-mail: input type='email', required.
-- Telefone: input type='tel'.
-- Data de nascimento: input type='date'.
-- Assunto: select com pelo menos 4 opcoes (ex: Denuncia, Voluntariado, Parceria,
-Imprensa, Outro).
-- Como conheceu o site: inputs type='radio' com pelo menos 3 opções.
-- Deseja receber newsletters: input type='checkbox'.
-- Mensagem: textarea com rows='6'.
-- Botão de envio: button type='submit'. */
     <main>
         <div>
            <form>
@@ -27,27 +17,70 @@ Imprensa, Outro).
 
             <fieldset>
             <legend>Dados Pessoais</legend>
+
             <label for = "nome">Nome:</label>
             <input type = "text" id = "nome"
             Nome="nome" required> 
             </fieldset>
+
             <fieldset>
             <label for = "email">E-mail:</label>
             <input type = "email" id = "email"
             E-mail="email" required> 
             </fieldset>
+
             <fieldset>
             <label for = "telefone">Telefone:</label>
             <input type = "number" id = "telefone"
             Telefone="telefone" required> 
             </fieldset>
+
             <fieldset>
             <label for = "data">Data de nascimento:</label>
-            <input type = "datetime-local" id = "data"
+            <input type = "datetime" id = "data"
             Data de nascimento ="data" required> 
             </fieldset>
-            
-            */enviar*/
+
+            <fieldset>
+            <label for = "denuncia">Assunto:    1.Denuncia</label>
+            <input type="checkbox" id="denuncia" name="Assunto">
+            <label for = "voluntário">2.Voluntário</label>
+            <input type="checkbox" id="voluntário" name="Assunto">
+            <label for = "Parceria">3.Parceria</label>
+            <input type="checkbox" id="Parceria" name="Assunto">  
+            <label for = "imprensa">4.Imprensa</label>
+            <input type="checkbox" id="imprensa" name="Assunto"> 
+            <label for = "ong">5.Ong</label>
+            <input type="checkbox" id="ong" name="Assunto"> 
+            </fieldset>
+
+            <fieldset>
+            <label for = "motivo">Como você conheceu o site? 1.Indicação de um amigo</label>
+            <input type = "radio" id="motivo" name="Motivo">
+            <label for = "Redes sociais">2.Redes Sociais</label>
+            <input type="radio" id="Redes sociais" name="Motivo"> 
+            <label for = "ind fami">3.Indicação da família</label>
+            <input type="radio" id="ind fami" name="Motivo"> 
+            <label for = "Comercial">4.Comercial do site</label>
+            <input type="radio" id="Comercial" name="Motivo"> 
+            </fieldset>
+
+            <fieldset>
+            <label for = "letter">Deseja receber um E-mail? 1.sim</label>
+            <input type="checkbox" id="letter" name="Motivo"> 
+            <label for = "letter">2.não</label>
+            <input type="checkbox" id="letter" name="Motivo"> 
+            </fieldset>
+
+            <fieldset>
+            mensagem
+            </fieldset>
+
+            <fieldset>
+            <label for="enviar">Confirmar cadastro?</label>
+            <input type="submit" id="enviar">
+            </fieldset>
+
             </fieldset>
 
             
