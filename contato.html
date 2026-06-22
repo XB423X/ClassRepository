@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FH - FoodHelp</title>
     <link rel="stylesheet" href="contato-style.css">
 </head>
 <body>
+    <!--
+        Informações fictícias obrigatórias
+
+Seção de informações de contato
+
+- Horários de atendimento em uma pequena tabela (table) ou lista de definição (dl, dt,
+dd).
+
+
+HTML aplicado nesta pagina
+- Tags: form, label, input (text, email, tel, date, radio, checkbox), select, option, textarea,
+button.
+- Atributos: required, placeholder, min, max, name, id, for.
+- Tag address para os dados de contato.
+- Tag dl, dt, dd para os horários.
+- iframe com title para o mapa.
+    -->
+    <div>
+        <h1>FoodHelp - FH</h1>
+        <p>COPIA E COLA DO INDEX</p>
+        <h3>Endereço</h3>
+        <p>Para nos encontrar na nossa sede venha no endereço: Goiás, Goiânia, Rua Juliano Alves da Silva, n°28</p>
+        <h3>Telefone</h3>
+        <p>Entre em contato para saber mais sobre o nosso projeto!! +55 (13) 992254781</p>
+        <h3>Email Fictício</h3>
+        <p> Nos mande uma mensagem no nosso email: nomeoficial@gmail.com.br</p>
+        <h3>Horário de Atendimento</h3>
+        <p>Funcionamos atendendo os clientes das 07:00 ás 19:00</p>
+    </div>
     <header>
        <h1> Formulário</h1> 
     </header>
@@ -31,36 +60,35 @@
 
             <fieldset>
             <label for = "telefone">Telefone:</label>
-            <input type = "number" id = "telefone"
+            <input type = "tel" id = "telefone"
             Telefone="telefone" required> 
             </fieldset>
 
             <fieldset>
             <label for = "data">Data de nascimento:</label>
-            <input type = "datetime" id = "data"
+            <input type = "date" id = "data"
             Data de nascimento ="data" required> 
             </fieldset>
 
             <fieldset>
-            <label for = "denuncia">Assunto:    1.Denuncia</label>
-            <input type="checkbox" id="denuncia" name="Assunto">
-            <label for = "voluntário">2.Voluntário</label>
-            <input type="checkbox" id="voluntário" name="Assunto">
-            <label for = "Parceria">3.Parceria</label>
-            <input type="checkbox" id="Parceria" name="Assunto">  
-            <label for = "imprensa">4.Imprensa</label>
-            <input type="checkbox" id="imprensa" name="Assunto"> 
-            <label for = "ong">5.Ong</label>
-            <input type="checkbox" id="ong" name="Assunto"> 
+            <label for="assunto">Assunto</label>
+            <select name="assunto" id="denuncia">
+            <option value ="selecione" >Selecione</option>
+            <option value ="voluntario">Voluntário</option>
+            <option value ="parceria">Parceria</option>
+            <option value ="Imprensa">Imprensa</option>
+            <option value ="denuncia">Denuncia</option>
+            <option value ="ong">ONG</option>
+            </select>
             </fieldset>
 
             <fieldset>
             <label for = "motivo">Como você conheceu o site? 1.Indicação de um amigo</label>
             <input type = "radio" id="motivo" name="Motivo">
-            <label for = "Redes sociais">2.Redes Sociais</label>
-            <input type="radio" id="Redes sociais" name="Motivo"> 
-            <label for = "ind fami">3.Indicação da família</label>
-            <input type="radio" id="ind fami" name="Motivo"> 
+            <label for = "Redes-sociais">2.Redes Sociais</label>
+            <input type="radio" id="Redes-sociais" name="Motivo"> 
+            <label for = "ind-fami">3.Indicação da família</label>
+            <input type="radio" id="ind-fami" name="Motivo"> 
             <label for = "Comercial">4.Comercial do site</label>
             <input type="radio" id="Comercial" name="Motivo"> 
             </fieldset>
@@ -73,7 +101,8 @@
             </fieldset>
 
             <fieldset>
-            mensagem
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
             </fieldset>
 
             <fieldset>
@@ -85,6 +114,30 @@
 
             
            </form>
+        </div>
+        <div>
+            <p><address>Nazário - GO, 76180-000</address></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15295.247071002786!2d-49.89737468559034!3d-16.58597983175588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e052dd9296b67%3A0x4b4ffd370a15070d!2sNaz%C3%A1rio%2C%20GO%2C%2076180-000!5e0!3m2!1spt-BR!2sbr!4v1782132906008!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <table cellspacing="2px" cellpadding="5px">
+                <caption>Horários</caption>
+                <thead class="TheadT">
+                    <tr>
+                        <th>Segunda a sexta</th>
+                    </tr>
+                </thead>
+                <tbody class="TbodyT">
+                    <tr>
+                        <td>07:00 às 19:00</td>
+                    </tr>
+                </tbody>
+                <tfoot class="TfootT">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
     </main>
     
