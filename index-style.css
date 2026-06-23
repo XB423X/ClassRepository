@@ -1,0 +1,14 @@
+@charset "UTF8";
+
+.fh-imageB {
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.Botao-CTA {
+    color: black;
+    font: Arial;
+    text-decoration: none;
+}
