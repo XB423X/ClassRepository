@@ -8,21 +8,15 @@
 </head>
 <body>
     <!--
-        Informações fictícias obrigatórias
-
-Seção de informações de contato
-
-- Horários de atendimento em uma pequena tabela (table) ou lista de definição (dl, dt,
-dd).
-
+        
 
 HTML aplicado nesta pagina
-- Tags: form, label, input (text, email, tel, date, radio, checkbox), select, option, textarea,
+- Tags: (
 button.
-- Atributos: required, placeholder, min, max, name, id, for.
+- Atributos: min, max
 - Tag address para os dados de contato.
-- Tag dl, dt, dd para os horários.
-- iframe com title para o mapa.
+
+
     -->
     <div>
         <h1>FoodHelp - FH</h1>
@@ -48,26 +42,26 @@ button.
             <legend>Dados Pessoais</legend>
 
             <label for = "nome">Nome:</label>
-            <input type = "text" id = "nome"
+            <input type = "text" id = "nome" placeholder="Digite seu nome"
             Nome="nome" required> 
             </fieldset>
 
             <fieldset>
             <label for = "email">E-mail:</label>
-            <input type = "email" id = "email"
+            <input type = "email" id = "email" placeholder="Digite seu E-mail"
             E-mail="email" required> 
             </fieldset>
 
             <fieldset>
             <label for = "telefone">Telefone:</label>
-            <input type = "tel" id = "telefone"
+            <input type = "tel" id = "telefone" placeholder="Digite seu telefone"
             Telefone="telefone" required> 
             </fieldset>
 
             <fieldset>
             <label for = "data">Data de nascimento:</label>
             <input type = "date" id = "data"
-            Data de nascimento ="data" required> 
+            tdate="data" required> 
             </fieldset>
 
             <fieldset>
@@ -102,12 +96,14 @@ button.
 
             <fieldset>
             <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="6" placeholder="Digite sua mensagem"></textarea>
             </fieldset>
 
             <fieldset>
             <label for="enviar">Confirmar cadastro?</label>
+            <button>
             <input type="submit" id="enviar">
+            </button>
             </fieldset>
 
             </fieldset>
@@ -116,15 +112,22 @@ button.
            </form>
         </div>
         <div>
+             <h1>
+                
+                    Sede do FoodHelp
+                
+             </h1>
             <p><address>Nazário - GO, 76180-000</address></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15295.247071002786!2d-49.89737468559034!3d-16.58597983175588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e052dd9296b67%3A0x4b4ffd370a15070d!2sNaz%C3%A1rio%2C%20GO%2C%2076180-000!5e0!3m2!1spt-BR!2sbr!4v1782132906008!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15295.247071002786!2d-49.89737468559034!3d-16.58597983175588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e052dd9296b67%3A0x4b4ffd370a15070d!2sNaz%C3%A1rio%2C%20GO%2C%2076180-000!5e0!3m2!1spt-BR!2sbr!4v1782132906008!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="sede-do-fh"></iframe>
         </div>
         <div>
             <table cellspacing="2px" cellpadding="5px">
                 <caption>Horários</caption>
                 <thead class="TheadT">
                     <tr>
-                        <th>Segunda a sexta</th>
+                        <th>
+                            Segunda a sexta
+                        </th>
                     </tr>
                 </thead>
                 <tbody class="TbodyT">
