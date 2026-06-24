@@ -1,5 +1,15 @@
 @charset "UTF8";
 
+
+:root {
+  --fonte: Arial;
+  --extratitulo:20px;
+  --titulo:16px;
+  --subtitulo:14px;
+  --texto:12px;
+  --comentario:10px;
+}
+
 .fh-imageB {
     min-width: 50px;
     max-width: 100px;
@@ -7,8 +17,45 @@
     max-height: 100px;
 }
 
+.P-inline {
+    font: var(--fonte);
+    font-size: var(--extratitulo);
+}
+
+.F-inline {
+    font: var(--fonte);
+    font-size: var(--extratitulo);
+}
+
 .Botao-CTA {
     color: black;
     font: Arial;
     text-decoration: none;
+}
+
+.HTitle {
+    font: var(--fonte);
+    font-size: var(--titulo);
+    font-weight: bold;
+}
+
+.HStitle {
+    font: var(--fonte);
+    font-size: var(--subtitulo);
+}
+
+.DCardtitle {
+    font: var(--fonte);
+    font-size: var(--titulo);
+    font-weight: bold;
+}
+
+.DCardtext {
+    font: var(--fonte);
+    font-size: var(--subtitulo);
+}
+
+.BQ {
+    font: var(--fonte);
+    font-size: var(--comentario);
 }
