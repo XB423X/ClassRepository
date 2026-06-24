@@ -1,3 +1,10 @@
 .TheadT {
     border: solid
 }
+
+.fh-imageB {
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 100px;
+}
