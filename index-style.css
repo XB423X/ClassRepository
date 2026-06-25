@@ -1,61 +1,109 @@
-@charset "UTF8";
-
+@charset "UTF-8";
 
 :root {
-  --fonte: Arial;
-  --extratitulo:20px;
-  --titulo:16px;
-  --subtitulo:14px;
-  --texto:12px;
-  --comentario:10px;
+  --fonto-C: italic;
+  --fonte: Arial, sans-serif;
+  --extratitulo: 24px;
+  --titulo: 20px;
+  --subtitulo: 18px;
+  --texto: 16px;
+  --comentario: 14px;
 }
 
 .fh-imageB {
-    min-width: 50px;
-    max-width: 100px;
-    min-height: 50px;
-    max-height: 100px;
+    width:50%;
+}
+
+.Resalva {
+    font-style: var(--fonto-C);
+    font-size: var(--comentario);
+}
+
+.Hero {
+    background-image: linear-gradient(yellow,beige);
+    background-size: cover;
+    background-position: center;
+    border: black 2px solid;
+    width: auto;
 }
 
 .P-inline {
-    font: var(--fonte);
+    font-family: var(--fonte);
     font-size: var(--extratitulo);
+    font-weight: bold;
 }
 
 .F-inline {
-    font: var(--fonte);
+    font-family: var(--fonte);
     font-size: var(--extratitulo);
 }
 
 .Botao-CTA {
     color: black;
-    font: Arial;
+    font-family: var(--fonte);
     text-decoration: none;
+    display: inline-block;
+    width: 1rem;
+    padding: 10px 16px;
+    background-color: beige;
+    border: 1px solid black;
 }
 
 .HTitle {
-    font: var(--fonte);
-    font-size: var(--titulo);
+    font-family: var(--fonte);
+    font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: bold;
 }
 
 .HStitle {
-    font: var(--fonte);
+    font-family: var(--fonte);
     font-size: var(--subtitulo);
+    font-weight:lighter;
 }
 
 .DCardtitle {
-    font: var(--fonte);
+    font-family: var(--fonte);
     font-size: var(--titulo);
     font-weight: bold;
 }
 
 .DCardtext {
-    font: var(--fonte);
+    font-family: var(--fonte);
     font-size: var(--subtitulo);
 }
 
 .BQ {
-    font: var(--fonte);
+    font-family: var(--fonte);
     font-size: var(--comentario);
+}
+
+.Destaque {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.DCard1,
+.DCard2,
+.DCard3,
+.DCard4 {
+    margin: 5px;
+    padding: 10px;
+    min-width: 20px;
+    max-width: none;
+    display: block;
+}
+
+.Links a:hover,
+.DCard1:hover,
+.DCard2:hover,
+.DCard3:hover,
+.DCard4:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.Rodape {
+    display: block;
+    position: static;
 }
