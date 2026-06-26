@@ -20,6 +20,7 @@
 }
 
 .Hero {
+    padding: 5px;
     background-image: linear-gradient(yellow,beige);
     background-size: cover;
     background-position: center;
@@ -43,7 +44,6 @@
     font-family: var(--fonte);
     text-decoration: none;
     display: inline-block;
-    width: 1rem;
     padding: 10px 16px;
     background-color: beige;
     border: 1px solid black;
@@ -81,6 +81,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
+    background-image: linear-gradient(beige,yellow);
+    background-size: cover;
+    background-position: center;
+    border: black 2px solid;
 }
 
 .DCard1,
