@@ -111,3 +111,21 @@
     display: block;
     position: static;
 }
+
+.TheadT {
+    border: solid
+}
+
+.fh-imageB {
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.form {
+    background-color: rgb(255, 255, 240);
+}
+.email {
+    background-color: rgba(160, 190, 22, 0.295);
+}
