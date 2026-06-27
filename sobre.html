@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHelp</title>
+
+<style>
+
+:root{
+
+
+
+--branco:#ffffff;
+--cinza:#f5f5f5;
+--texto:#333333;
+
+--fonte-titulo:"Montserrat",sans-serif;
+--fonte-texto:"Roboto",sans-serif;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+table{
+margin:30px auto;
+width:500px;
+
+table-layout: fixed;
+
+border-collapse: collapse;
+
+border-spacing: 0px 0px;
+
+border-color: #000;
+
+}
+
+th {
+
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    background-color:var(--verde-escuro);
+
+
+}
+
+td {
+
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+
+background:var(--cinza);
+
+}
+
+section {
+    padding: 20px;
+}
+
+.timeline-content {
+    display:flex;
+    width:80%;
+    margin:50px auto;
+    position:relative;
+}
+
+.timeline-content .ano {
+     width:70px;
+    font-weight:bold;
+    color:#000000;
+    text-align:right;
+    margin-right:40px;
+}
+
+.timeline-content::before{
+    content:"";
+    position:absolute;
+    left:90px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#000000;
+}
+
+.timeline-content .texto {
+    background:#f8f8f8;
+    padding:15px 20px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+    flex:1;
+}
+
+.timeline-content .texto h3 {
+    margin-bottom:8px;
+    color:#000000;
+}
+
+.equipe {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--cinza);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--texto);
+}
+
+.card p {
+    color: var(--texto);
+}
+
+.fonte {
+    text-align: center;
+    font-size: 14px;
+    color: var(--texto);
+    margin-top: 10px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+    <section>
+<header>
+        <H1>FoodHelp </H1>
+        <h2>Projeto de pesquisa sobre segurança alimentar e fome no Brasil</h2>
+        
+        <section class="Links">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="tema.html">Segurança alimentar e fome</a></li>
+                    <li><a href="midia.html">Mídia</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="extra.html">Saiba mais</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+<section>
+
+    <h2>Quem Somos</h2>
+<div class="equipe">   
+<div class="card">
+   <h3>Luisa Mel</h3>
+      <img src="imagem/Luisa.png" alt="Avatar de Luisa Mel">
+      <h3>"Combater a fome é cultivar esperança."</h3>
+    <p>CONTATO</p>
+</div>
+
+<div class="card">
+    <h3>Clara Rustighi</h3>
+       <img src="imagem/Clara.png" alt="Avatar de Clara Rustighi">
+       <h3>"A informação é o primeiro passo para mudar a realidade."</h3>
+    <p>SOBRE</p>
+</div>
+
+<div class="card">
+    <h3>Gustavo Nascimento</h3>
+       <img src="imagem/Gustavo.png" alt="Avatar de Gustavo Nascimento">
+       <h3>"A informação é o primeiro passo para mudar a realidade."</h3>
+    <p>CSS e TEMA</p>
+</div>
+
+<div class="card">
+    <h3>Breno Neves</h3>
+       <img src="imagem/Breno.png" alt="Avatar de Breno Neves">
+       <h3>"Conhecimento só faz sentido quando é compartilhado."</h3>
+    <p>INDEX</p>
+</div>
+
+
+<div class="card">
+    <h3>Yasmin Eliza</h3>
+       <img src="imagem/Yasmin.png" alt="Avatar de Yasmin Eliza">
+       <h3> "Cada detalhe faz diferença no resultado final."</h3>
+    <p>MÍDIA</p>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<h2>Nossa Missão</h2>
+ <blockquote>
+        <p>Nosso objetivo é promover a conscientização sobre a segurança alimentar e o combate à fome,
+        destacando a importância do acesso a alimentos de qualidade para toda a população. 
+        Por meio deste projeto, buscamos informar, despertar a reflexão e incentivar atitudes 
+        solidárias que contribuam para a construção de uma sociedade mais justa.</p>
+        
+    </blockquote>
+
+
+
+
+
+<h2>O Problema em Números</h2>
+<p>Os indicadores a seguir permitem compreender melhor os desafios e os avanços no combate à fome no país.</p>
+
+<table border="1">
+    <thead>
+         <thead>
+        <tr>
+            <th colspan="4">Segurança Alimentar e Fome no Brasil</th>
+        </tr>
+        <tr>
+            <th>Ano</th>
+            <th>Segurança Alimentar (%)</th>
+            <th>Algum Grau de Insegurança (%)</th>
+            <th>Insegurança Grave (Fome) (%)</th>
+           
+        </tr>
+    </thead>
+    </thead>   
+    <tbody>
+       <td> 2004</td>
+       <td>65,1</td>
+         <td>34,9</td>
+         <td>6,9</td>
+       
+      
+    
+   <tr> 
+       <td>2009</td>
+       <td>69,8</td>
+         <td>30,2</td>
+         <td>5,0</td>
+       
+      
+   </tr>
+   
+   <tr>    
+       <td>2013</td>
+       <td>77,4</td>
+       <td>22,6</td>
+       <td>3,2</td>
+   </tr>
+
+   <tr>    
+       <td>2018</td>
+       <td>63,3</td>
+       <td>36,7</td>
+       <td>4,6</td>
+       
+    
+   </tr>
+   <tr>    
+       <td>2023</td>
+       <td>72,4</td>
+       <td>27,6</td>
+       <td>4,1</td>
+      
+
+   <tr>    </td>
+        </tr>
+    
+    </tfoot>
+</table>
+
+<p class="fonte">
+    Fonte: IBGE, PNAD Contínua 2023.
+</p>
+
+<section>
+<h2>Linha do Tempo</h2>
+
+<div class="timeline">
+ 
+    <div class="timeline-content">
+     <div class="ano"> 1943 </div>
+     <div class="texto">
+      <h3>Conferência de Hot Springs.</h3>
+      <p>A primeira conferência das Nações Unidas sobre alimentação discutiu estratégias para combater a fome após a Segunda Guerra Mundial e abriu caminho para a criação da FAO.</p>
+
+    </div>
+    </div>
+  
+  
+
+   <div class="timeline-content">
+      <div class="ano"> 1945 </div>
+      <div class="texto">
+      <h3>Criação da FAO</h3>
+      <p>Foi criada a Organização das Nações Unidas para Alimentação e Agricultura (FAO), responsável por coordenar ações internacionais de combate à fome. O Brasil participou desde sua fundação.</p>
+    </div>
+   </div>
+  
+  
+  
+  
+    <div class="timeline-content">
+      <div class="ano"> 1974 </div>
+      <div class="texto">
+      <h3>I Conferência Mundial da Alimentação</h3>
+      <p>O debate deixou de focar apenas na produção de alimentos e passou a considerar a pobreza e o acesso aos alimentos como causas centrais da fome.</p>
+    </div>
+    </div>
+    
+  
+
+        <div class="timeline-content">
+        <div class="ano"> 1992 </div>
+        <div class="texto">
+        <h3>Segurança Alimentar e Nutricional</h3>
+        <p>A Conferência Internacional de Nutrição ampliou o conceito de segurança alimentar, incluindo também a qualidade nutricional e sanitária dos alimentos.</p>
+        </div>
+        </div>
+       
+     
+     
+       
+        <div class="timeline-content">
+        <div class="ano"> 1993 </div>
+        <div class="texto">
+        <h3>Criação do CONSEA</h3>
+        <p>Foi criado o Conselho Nacional de Segurança Alimentar e Nutricional (CONSEA), fortalecendo a participação da sociedade nas políticas públicas de combate à fome.</p>
+        </div>
+        </div>
+
+         
+        <div class="timeline-content">
+        <div class="ano"> 1996 </div>
+        <div class="texto">
+        <h3>Cúpula Mundial da Alimentação</h3>
+        <p>A FAO reconheceu oficialmente o Direito Humano à Alimentação Adequada como um direito fundamental.</p>
+        </div>
+        </div>
+       
+
+        
+        <div class="timeline-content">
+        <div class="ano"> 2003 </div>
+        <div class="texto">
+        <h3>Programa Fome Zero</h3>
+        <p>O governo brasileiro lançou o Programa Fome Zero, integrando diversas políticas públicas para reduzir a fome e fortalecer a segurança alimentar.</p>
+        </div>
+        </div>
+</div>
+</section>
+
+
+<section>   
+
+  
+</section>  
+
+<footer>
+         <p>
+        Trabalho escolar sobre <strong>Segurança Alimentar e Fome no Brasil</strong>.
+    </p>
+          Desenvolvido por <strong>Gustavo Nascimento</strong>,
+        <strong>Yasmim Eliza</strong>,
+        <strong>Breno Neves</strong>,
+        <strong>Clara Rustighi</strong> e
+        <strong>Luisa Mel</strong>.
+    </p>
+
+    <p>© 2026 • Trabalho de HTML e CSS</p>
+   </footer>
+</body>
+</html>
