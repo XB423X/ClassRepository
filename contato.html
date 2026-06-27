@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="FH-style.css">
 </head>
 <body>
+
     <header>
         <section class="P-inline">
-            <h1>
-                <!-- Nome do projeto/ site-->
+            <h2>
                 FoodHelp - FH
-            </h1>
+            </h2>
         </section>
-        <section class="fh-image"><img src="Imgs/WhatsApp Image 2026-06-17 at 07.57.43.jpeg" alt="FH-Image" class="fh-imageB"></section>
+        <section class="fh-image">
+            <figure>
+                <picture>
+                    <img src="Imgs/WhatsApp Image 2026-06-17 at 07.57.43.jpeg" alt="FH-Image" class="fh-imageB">
+                </picture>
+            </figure>
+        </section>
         <section class="Links">
             <nav>
                 <ul>
@@ -28,6 +34,7 @@
             </nav>
         </section>
     </header>
+
     <main>
         <div>
             <h1>FoodHelp - FH</h1>
@@ -48,7 +55,7 @@
            <form class="form">
             <fieldset>
 
-            <fieldset>
+            <fieldset class="colum1">
             <legend>Dados Pessoais</legend>
 
             <label for = "nome">Nome:</label>
@@ -56,26 +63,26 @@
             Nome="nome" required> 
             </fieldset>
 
-            <fieldset class="email">
+            <fieldset class="colum2">
             <label for = "email">E-mail:</label>
             <input type = "email" id = "email" placeholder="Digite seu E-mail"
             E-mail="email" required> 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="colum1">
             <label for = "telefone">Telefone:</label>
             <input type = "tel" id = "telefone" placeholder="Digite seu telefone"
             Telefone="telefone" required> 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="colum2">
             <label for = "data">Data de nascimento:</label>
             <input type = "date" id = "data"
             tdate="data" required> 
             </fieldset>
 
-            <fieldset>
-            <label for="assunto">Assunto</label>
+            <fieldset class="colum1">
+            <label for="assunto">Assunto:</label>
             <select name="assunto" id="denuncia">
             <option value ="selecione" >Selecione</option>
             <option value ="voluntario">Voluntário</option>
@@ -86,8 +93,8 @@
             </select>
             </fieldset>
 
-            <fieldset>
-            <label for = "motivo">Como você conheceu o site? 1.Indicação de um amigo</label>
+            <fieldset class="colum2">
+            <label for = "motivo">Como você conheceu o site?: 1.Indicação de um amigo</label>
             <input type = "radio" id="motivo" name="Motivo">
             <label for = "Redes-sociais">2.Redes Sociais</label>
             <input type="radio" id="Redes-sociais" name="Motivo"> 
@@ -97,21 +104,21 @@
             <input type="radio" id="Comercial" name="Motivo"> 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="colum1">
             <label for = "letter">Deseja receber um E-mail? 1.sim</label>
             <input type="checkbox" id="letter" name="Motivo"> 
             <label for = "letter">2.não</label>
             <input type="checkbox" id="letter" name="Motivo"> 
             </fieldset>
 
-            <fieldset>
-            <label for="mensagem">Mensagem</label>
+            <fieldset class="colum2">
+            <label for="mensagem">Mensagem:</label>
             <textarea name="mensagem" id="mensagem" cols="30" rows="6" placeholder="Digite sua mensagem"></textarea>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="colum1">
             <label for="enviar">Confirmar cadastro?</label>
-            <button>
+            <button class="Csubmit">
             <input type="submit" id="enviar">
             </button>
             </fieldset>
@@ -123,36 +130,35 @@
         </div>
         <div>
              <h1>
-                
                     Sede do FoodHelp
-                
              </h1>
             <p><address>Nazário - GO, 76180-000</address></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15295.247071002786!2d-49.89737468559034!3d-16.58597983175588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e052dd9296b67%3A0x4b4ffd370a15070d!2sNaz%C3%A1rio%2C%20GO%2C%2076180-000!5e0!3m2!1spt-BR!2sbr!4v1782132906008!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="sede-do-fh"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15295.247071002786!2d-49.89737468559034!3d-16.58597983175588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e052dd9296b67%3A0x4b4ffd370a15070d!2sNaz%C3%A1rio%2C%20GO%2C%2076180-000!5e0!3m2!1spt-BR!2sbr!4v1782132906008!5m2!1spt-BR!2sbr" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="sede-do-fh"></iframe>
         </div>
         <div>
-            <table cellspacing="2px" cellpadding="5px">
-                <caption>Horários</caption>
+            <table border="1" cellspacing="2px" cellpadding="5px" class="Tcontato">
                 <thead class="TheadT">
                     <tr>
-                        <th>
-                            Segunda a sexta
+                        <th colspan="2">
+                            Horários
                         </th>
                     </tr>
                 </thead>
                 <tbody class="TbodyT">
                     <tr>
+                        <td>Segunda a Sexta</td>
                         <td>07:00 às 19:00</td>
                     </tr>
                 </tbody>
                 <tfoot class="TfootT">
                     <tr>
-                        <td></td>
+                        <td colspan="2">Não abrimos em feriados ou finais de semana</td>
                     </tr>
                 </tfoot>
             </table>
         </div>
     </main>
+
     <footer>
         <section class="Rodape">
             <section class="F-inline">
@@ -203,7 +209,7 @@
                             E-mail
                         </h3>
                         <p> 
-                            Nos mande uma mensagem no nosso email: <address><a href="mailto:FHfoodhelpoficial26@gmail.com.br">FHfoodhelpoficial26@gmail.com.br</a></address>
+                            Nos mande uma mensagem no nosso email: <a href="mailto:FHfoodhelpoficial26@gmail.com.br">FHfoodhelpoficial26@gmail.com.br</a>
                         </p>
                     </div>
                     <div>
@@ -250,7 +256,7 @@
                 </nav> 
             </section>
 
-            <p>&copy; 2026 - Trabalho de HTML | Segurança Alimentar e Fome</p>
+            <p>&copy; 2026 - Trabalho de HTML | Segurança Alimentar e Fome | FH - FoodHelp</p>
         </section>
     </footer>
 </body>
